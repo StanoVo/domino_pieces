@@ -83,7 +83,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/TrainTestSplitPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/TrainTestSplitPiece"
     },
     "MinOfTheDayPiece": {
         "name": "MinOfTheDayPiece",
@@ -154,7 +154,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/MinOfTheDayPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/MinOfTheDayPiece"
     },
     "DayOfTheYearPiece": {
         "name": "DayOfTheYearPiece",
@@ -225,7 +225,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/DayOfTheYearPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/DayOfTheYearPiece"
     },
     "IsDayPiece": {
         "name": "IsDayPiece",
@@ -296,7 +296,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/IsDayPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/IsDayPiece"
     },
     "MeteoPiece": {
         "name": "MeteoPiece",
@@ -373,7 +373,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/MeteoPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/MeteoPiece"
     },
     "InferenceModelPiece": {
         "name": "InferenceModelPiece",
@@ -447,7 +447,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/InferenceModelPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/InferenceModelPiece"
     },
     "FVEPiece": {
         "name": "FVEPiece",
@@ -524,7 +524,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/FVEPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/FVEPiece"
     },
     "ExecuteShellPiece": {
         "name": "ExecuteShellPiece",
@@ -596,7 +596,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/ExecuteShellPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/ExecuteShellPiece"
     },
     "RenameColumnPiece": {
         "name": "RenameColumnPiece",
@@ -679,7 +679,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/RenameColumnPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/RenameColumnPiece"
     },
     "KafkaConsumerPiece": {
         "name": "KafkaConsumerPiece",
@@ -773,16 +773,6 @@
                     "description": "Timeout in seconds to stop polling if there are no messages arriving.",
                     "title": "No Message Timeout",
                     "type": "number"
-                },
-                "output_format": {
-                    "default": "message",
-                    "description": "Output format",
-                    "enum": [
-                        "message",
-                        "message_value_decoded"
-                    ],
-                    "title": "Output Format",
-                    "type": "string"
                 }
             },
             "title": "InputModel",
@@ -835,7 +825,7 @@
             "title": "SecretsModel",
             "type": "object"
         },
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/KafkaConsumerPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/KafkaConsumerPiece"
     },
     "ConvertTimePiece": {
         "name": "ConvertTimePiece",
@@ -906,7 +896,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/ConvertTimePiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/ConvertTimePiece"
     },
     "SelectDatesPiece": {
         "name": "SelectDatesPiece",
@@ -992,7 +982,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/SelectDatesPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/SelectDatesPiece"
     },
     "InputDataSEPSPiece": {
         "name": "InputDataSEPSPiece",
@@ -1121,7 +1111,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/InputDataSEPSPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/InputDataSEPSPiece"
     },
     "RemoveUnusedMeteoPiece": {
         "name": "RemoveUnusedMeteoPiece",
@@ -1192,7 +1182,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/RemoveUnusedMeteoPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/RemoveUnusedMeteoPiece"
     },
     "AddSunPiece": {
         "name": "AddSunPiece",
@@ -1269,7 +1259,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/AddSunPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/AddSunPiece"
     },
     "CiselnikyPiece": {
         "name": "CiselnikyPiece",
@@ -1346,7 +1336,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/CiselnikyPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/CiselnikyPiece"
     },
     "AddAdvancedMeteoPiece": {
         "name": "AddAdvancedMeteoPiece",
@@ -1417,7 +1407,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/AddAdvancedMeteoPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/AddAdvancedMeteoPiece"
     },
     "TrainRandomForestRegressorPiece": {
         "name": "TrainRandomForestRegressorPiece",
@@ -1570,7 +1560,7 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/TrainRandomForestRegressorPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/TrainRandomForestRegressorPiece"
     },
     "Meteo_FVEPiece": {
         "name": "Meteo_FVEPiece",
@@ -1647,6 +1637,6 @@
             "type": "object"
         },
         "secrets_schema": null,
-        "source_url": "https://github.com/IISAS/spice_domino_pieces/tree/main/pieces/Meteo_FVEPiece"
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/Meteo_FVEPiece"
     }
 }
