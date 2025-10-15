@@ -5,7 +5,7 @@ REGISTRY_NAME = "stanovo"
 
 # The name of this Pieces repository
 REPOSITORY_NAME = "domino_pieces"
-REPOSITORY_LABEL = "Domino Pieces  Testing"
+REPOSITORY_LABEL = "Domino Pieces Testing"
 
 # The version of this Pieces release
 # Attention: changing this will create a new release
