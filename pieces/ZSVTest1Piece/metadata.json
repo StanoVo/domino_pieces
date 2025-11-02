@@ -1,0 +1,24 @@
+{
+    "name": "ZSVTest1Piece",
+    "description": "This loads Test Data and copy them to output file",
+    "dependency": {
+        "requirements_file": "requirements_0.txt"
+    },
+    "container_resources": {
+        "requests": {
+            "cpu": 2,
+            "memory": 3
+        },
+        "limits": {
+            "cpu": 4,
+            "memory": 4
+        }
+    },
+    "tags": [
+        "Test Data piece"
+    ],
+    "style": {
+        "node_label": "Test Data Piece",
+        "icon_class_name": "fa-solid:database"
+    }
+}
