@@ -6,12 +6,12 @@
     },
     "container_resources": {
         "requests": {
-            "cpu": 2,
-            "memory": 3
+            "cpu": 100,
+            "memory": 128
         },
         "limits": {
-            "cpu": 4,
-            "memory": 4
+            "cpu": 500,
+            "memory": 512
         }
     },
     "tags": [
