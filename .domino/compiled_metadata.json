@@ -1562,6 +1562,77 @@
         "secrets_schema": null,
         "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/TrainRandomForestRegressorPiece"
     },
+    "ZSVTest1Piece": {
+        "name": "ZSVTest1Piece",
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": "requirements_0.txt"
+        },
+        "tags": [
+            "Test Data piece"
+        ],
+        "style": {
+            "node_label": "Test Data Piece",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#ebebeb"
+            },
+            "useIcon": true,
+            "icon_class_name": "fa-solid:database",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "description": "This loads Test Data and copy them to output file",
+        "container_resources": {
+            "requests": {
+                "cpu": 100,
+                "memory": 128
+            },
+            "limits": {
+                "cpu": 500,
+                "memory": 512
+            }
+        },
+        "input_schema": {
+            "description": "Test Data Piece Input Model",
+            "properties": {
+                "test_input_file": {
+                    "description": "The path to the Test Data",
+                    "title": "Test input data",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "test_input_file"
+            ],
+            "title": "InputModel",
+            "type": "object"
+        },
+        "output_schema": {
+            "description": "Test Data Piece Output Model",
+            "properties": {
+                "message": {
+                    "default": "",
+                    "description": "Output message to log",
+                    "title": "Message",
+                    "type": "string"
+                },
+                "file_path": {
+                    "description": "The path to the copied Test Data file by the specified Location",
+                    "title": "File Path",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "file_path"
+            ],
+            "title": "OutputModel",
+            "type": "object"
+        },
+        "secrets_schema": null,
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/ZSVTest1Piece"
+    },
     "Meteo_FVEPiece": {
         "name": "Meteo_FVEPiece",
         "dependency": {
