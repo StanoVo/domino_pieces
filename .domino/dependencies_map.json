@@ -26,11 +26,11 @@
             "Meteo_FVEPiece"
         ],
         "secrets": [
-            "KAFKA_CA_CERT_PEM",
             "KAFKA_CERT_PEM",
-            "KAFKA_KEY_PEM"
+            "KAFKA_KEY_PEM",
+            "KAFKA_CA_CERT_PEM"
         ],
-        "source_image": "ghcr.io/stanovo/domino_pieces:0.2.0-group0"
+        "source_image": "ghcr.io/stanovo/domino_pieces:0.2.1-group0"
     },
     "group1": {
         "dependency": {
@@ -41,6 +41,6 @@
             "ExecuteShellPiece"
         ],
         "secrets": [],
-        "source_image": "ghcr.io/stanovo/domino_pieces:0.2.0-group1"
+        "source_image": "ghcr.io/stanovo/domino_pieces:0.2.1-group1"
     }
 }
