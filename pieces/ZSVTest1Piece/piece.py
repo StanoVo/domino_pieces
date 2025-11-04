@@ -16,7 +16,7 @@ class ZSVTest1Piece(BasePiece):
         df_testdata = pd.read_csv(input_data.testdata_input_file)
     
 
-        message = f"testdata for location: {input_data.location} readed successfully"
+        message = f"testdata readed successfully"
         file_path = str(Path(self.results_path) / "Test_Data_copied.csv")
         df_testdata.to_csv(file_path, index=False)
 
