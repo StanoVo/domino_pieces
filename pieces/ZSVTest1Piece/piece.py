@@ -1,4 +1,4 @@
-from ...base_piece import BasePiece
+from domino.base_piece import BasePiece
 try:
     # prefer relative import when running as a package
     from .models import InputModel, OutputModel
