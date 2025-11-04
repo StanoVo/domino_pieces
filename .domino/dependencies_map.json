@@ -27,8 +27,8 @@
         ],
         "secrets": [
             "KAFKA_CA_CERT_PEM",
-            "KAFKA_KEY_PEM",
-            "KAFKA_CERT_PEM"
+            "KAFKA_CERT_PEM",
+            "KAFKA_KEY_PEM"
         ],
         "source_image": "ghcr.io/stanovo/domino_pieces:0.2.0-group0"
     },
