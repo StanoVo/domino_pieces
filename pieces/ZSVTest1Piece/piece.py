@@ -9,7 +9,7 @@ import pandas as pd
 from pathlib import Path
 
 
-class ZSVTestPiece(BasePiece):
+class ZSVTest1Piece(BasePiece):
     
     def piece_function(self, input_data: InputModel):
         
