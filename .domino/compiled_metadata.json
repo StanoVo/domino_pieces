@@ -1597,14 +1597,14 @@
         "input_schema": {
             "description": "Test Data Piece Input Model",
             "properties": {
-                "test_input_file": {
+                "testdata_input_file": {
                     "description": "The path to the Test Data",
                     "title": "Test input data",
                     "type": "string"
                 }
             },
             "required": [
-                "test_input_file"
+                "testdata_input_file"
             ],
             "title": "InputModel",
             "type": "object"
