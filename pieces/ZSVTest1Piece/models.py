@@ -6,7 +6,7 @@ class InputModel(BaseModel):
     Test Data Piece Input Model
     """
 
-    test_input_file: str = Field(
+    testdata_input_file: str = Field(
         title="Test input data",
         # default='/home/shared_storage/TestData.csv',
         description="The path to the Test Data",
