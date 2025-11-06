@@ -1,0 +1,24 @@
+{
+    "name": "ZSVTest2MeteoPiece",
+    "description": "Transforms input MS Word doc file (data part) to output CSV file",
+    "dependency": {
+        "requirements_file": "requirements_0.txt"
+    },
+    "container_resources": {
+        "requests": {
+            "cpu": 100,
+            "memory": 128
+        },
+        "limits": {
+            "cpu": 500,
+            "memory": 512
+        }
+    },
+    "tags": [
+        "ZSVTest2MeteoPiece"
+    ],
+    "style": {
+        "node_label": "ZSV Test2 Meteo Piece",
+        "icon_class_name": "fa-solid:database"
+    }
+}
