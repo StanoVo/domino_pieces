@@ -526,6 +526,77 @@
         "secrets_schema": null,
         "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/FVEPiece"
     },
+    "ZSVTest2MeteoPiece": {
+        "name": "ZSVTest2MeteoPiece",
+        "dependency": {
+            "dockerfile": null,
+            "requirements_file": "requirements_0.txt"
+        },
+        "tags": [
+            "ZSVTest2MeteoPiece"
+        ],
+        "style": {
+            "node_label": "ZSV Test2 Meteo Piece",
+            "node_type": "default",
+            "node_style": {
+                "backgroundColor": "#ebebeb"
+            },
+            "useIcon": true,
+            "icon_class_name": "fa-solid:database",
+            "iconStyle": {
+                "cursor": "pointer"
+            }
+        },
+        "description": "Transforms input MS Word doc file (data part) to output CSV file",
+        "container_resources": {
+            "requests": {
+                "cpu": 100,
+                "memory": 128
+            },
+            "limits": {
+                "cpu": 500,
+                "memory": 512
+            }
+        },
+        "input_schema": {
+            "description": "Test Meteo Data Piece Input Model",
+            "properties": {
+                "data_input_file": {
+                    "description": "The path to the input meteo data in word doc file",
+                    "title": "Input data",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "data_input_file"
+            ],
+            "title": "InputModel",
+            "type": "object"
+        },
+        "output_schema": {
+            "description": "Test Meteo Data Piece Output Model",
+            "properties": {
+                "message": {
+                    "default": "",
+                    "description": "Output message to log",
+                    "title": "Message",
+                    "type": "string"
+                },
+                "file_path": {
+                    "description": "The path to the output CSV data file",
+                    "title": "File Path",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "file_path"
+            ],
+            "title": "OutputModel",
+            "type": "object"
+        },
+        "secrets_schema": null,
+        "source_url": "https://github.com/StanoVo/domino_pieces/tree/main/pieces/ZSVTest2MeteoPiece"
+    },
     "ExecuteShellPiece": {
         "name": "ExecuteShellPiece",
         "dependency": {

@@ -12,6 +12,7 @@
             "MeteoPiece",
             "InferenceModelPiece",
             "FVEPiece",
+            "ZSVTest2MeteoPiece",
             "RenameColumnPiece",
             "KafkaConsumerPiece",
             "ConvertTimePiece",
@@ -26,11 +27,11 @@
             "Meteo_FVEPiece"
         ],
         "secrets": [
-            "KAFKA_CERT_PEM",
             "KAFKA_KEY_PEM",
-            "KAFKA_CA_CERT_PEM"
+            "KAFKA_CA_CERT_PEM",
+            "KAFKA_CERT_PEM"
         ],
-        "source_image": "ghcr.io/stanovo/domino_pieces:0.2.4-group0"
+        "source_image": "ghcr.io/stanovo/domino_pieces:0.2.5-group0"
     },
     "group1": {
         "dependency": {
@@ -41,6 +42,6 @@
             "ExecuteShellPiece"
         ],
         "secrets": [],
-        "source_image": "ghcr.io/stanovo/domino_pieces:0.2.4-group1"
+        "source_image": "ghcr.io/stanovo/domino_pieces:0.2.5-group1"
     }
 }
