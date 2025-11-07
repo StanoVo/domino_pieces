@@ -561,14 +561,32 @@
         "input_schema": {
             "description": "Test Meteo Data Piece Input Model",
             "properties": {
+                "data_input_folder": {
+                    "description": "The path to folder with input meteo data files ",
+                    "title": "Path to folder with input data",
+                    "type": "string"
+                },
                 "data_input_file": {
-                    "description": "The path to the input meteo data in word doc file",
-                    "title": "Input data",
+                    "description": "Name of the word doc with meteo data",
+                    "title": "Input data file name",
+                    "type": "string"
+                },
+                "data_output_folder": {
+                    "description": "The path to folder with output meteo data files ",
+                    "title": "Path to folder with output data",
+                    "type": "string"
+                },
+                "data_output_file": {
+                    "description": "Name of the CSV file with meteo data",
+                    "title": "Output data file name",
                     "type": "string"
                 }
             },
             "required": [
-                "data_input_file"
+                "data_input_folder",
+                "data_input_file",
+                "data_output_folder",
+                "data_output_file"
             ],
             "title": "InputModel",
             "type": "object"
@@ -583,7 +601,7 @@
                     "type": "string"
                 },
                 "file_path": {
-                    "description": "The path to the output CSV data file",
+                    "description": "The path & file name to the output CSV file",
                     "title": "File Path",
                     "type": "string"
                 }
