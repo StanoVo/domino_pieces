@@ -13,7 +13,8 @@ class ZSVTest2MeteoPiece(BasePiece):
         csv_started = False
 
         # Read the Word document
-        doc = Document(input_data.data_input_file)
+        input_data_file = Path(input_data.data_input_folder) / input_data.data_input_file
+        doc = Document(input_data_file)
         csv_data = []
         csv_started = False
     
@@ -33,18 +34,20 @@ class ZSVTest2MeteoPiece(BasePiece):
         if csv_data:
             df = pd.DataFrame(csv_data)
             message = f"Doc with data readed successfully"
-            file_path = str(Path(self.results_path) / "Output_Data.csv")
-            df.to_csv(file_path, index=False, header=False)
+            #output_data_file = str(Path(self.results_path) / "Output_Data.csv")
+            output_data_file = Path(input_data.data_output_folder) / input_data.data_output_file
+            df.to_csv(output_data_file, index=False, header=False)
         #doc = Document(input_file) ??
             
         # Set display result
         self.display_result = {
             "file_type": "csv",
-            "file_path": file_path
+            "file_path": str(output_data_file)
+            
         }
 
         # Return output
         return OutputModel(
             message=message,
-            file_path=file_path
+            file_path=str(output_data_file)
         )
